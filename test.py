@@ -4,7 +4,7 @@ from openai import OpenAI
 import os
 
 load_dotenv()
-api_key = os.getenv("api-key")
+api_key = os.getenv("api-key") or st.secrets['api_key']
 client = OpenAI(api_key = api_key)
 
 title = "프로그래밍 언어 번역기"
