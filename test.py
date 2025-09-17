@@ -1,10 +1,10 @@
 import streamlit as st
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 from openai import OpenAI
-import os
+#import os
 
-load_dotenv()
-api_key = os.getenv("api-key") or st.secrets['api_key']
+#load_dotenv()
+api_key = st.secrets['api_key']
 client = OpenAI(api_key = api_key)
 
 title = "프로그래밍 언어 번역기"
